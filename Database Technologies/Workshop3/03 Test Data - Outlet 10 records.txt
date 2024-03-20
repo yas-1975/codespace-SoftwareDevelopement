@@ -1,0 +1,12 @@
+INSERT INTO outlet (outlet_id, outlet_suburb, outlet_phone,company_id,company_name)
+VALUES
+(1, 'Glasgow', '0141-123-4567',1,'FastburgerNow'),
+(2, 'Edinburgh', '0131-234-5678',1,'FastburgerNow'),
+(3, 'Aberdeen', '01224-345678',1,'FastburgerNow'),
+(4, 'Dundee', '01382-456789',1,'FastburgerNow'),
+(5, 'Inverness', '01463-567890',1,'FastburgerNow'),
+(6, 'Stirling', '01786-678901',1,'FastburgerNow'),
+(7, 'Perth', '01738-789012',1,'FastburgerNow'),
+(8, 'Ayr', '01292-890123',1,'FastburgerNow'),
+(9, 'Falkirk', '01324-901234',1,'FastburgerNow'),
+(10, 'Kirkcaldy', '01592-012345',1,'FastburgerNow');

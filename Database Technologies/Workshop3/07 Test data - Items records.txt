@@ -1,0 +1,22 @@
+INSERT INTO items (item_id, item_type, quantity, item_name, menu_no)
+VALUES
+(1, 'Food', 50, 'Classic Burger', FLOOR(1 + RAND() * 3)),
+(2, 'Food', 40, 'Cheeseburger', FLOOR(1 + RAND() * 3)),
+(3, 'Food', 30, 'Bacon Burger', FLOOR(1 + RAND() * 3)),
+(4, 'Food', 35, 'Veggie Burger', FLOOR(1 + RAND() * 3)),
+(5, 'Food', 45, 'Chicken Burger', FLOOR(1 + RAND() * 3)),
+(6, 'Drink', 100, 'Coca-Cola', FLOOR(1 + RAND() * 3)),
+(7, 'Drink', 90, 'Sprite', FLOOR(1 + RAND() * 3)),
+(8, 'Drink', 80, 'Fanta', FLOOR(1 + RAND() * 3)),
+(9, 'Drink', 85, 'Iced Tea', FLOOR(1 + RAND() * 3)),
+(10, 'Drink', 95, 'Lemonade', FLOOR(1 + RAND() * 3)),
+(11, 'Food', 55, 'Double Cheeseburger', FLOOR(1 + RAND() * 3)),
+(12, 'Food', 60, 'BBQ Burger', FLOOR(1 + RAND() * 2)),
+(13, 'Food', 70, 'Spicy Chicken Burger', FLOOR(1 + RAND() * 3)),
+(14, 'Drink', 75, 'Root Beer', FLOOR(1 + RAND() * 3)),
+(15, 'Drink', 65, 'Milkshake', FLOOR(1 + RAND() * 3)),
+(16, 'Food', 48, 'Fish Burger', FLOOR(1 + RAND() * 3)),
+(17, 'Drink', 88, 'Orange Juice', FLOOR(1 + RAND() * 3)),
+(18, 'Food', 42, 'Mushroom Swiss Burger', FLOOR(1 + RAND() * 3)),
+(19, 'Food', 37, 'Turkey Burger', FLOOR(1 + RAND() * 3)),
+(20, 'Drink', 82, 'Iced Coffee', FLOOR(1 + RAND() * 2));

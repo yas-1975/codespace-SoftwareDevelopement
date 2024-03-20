@@ -1,0 +1,11 @@
+INSERT INTO burger_specials (menu_id, menu_name, menu_type) VALUES
+(001, 'Classic Cheeseburger', 'Burgers'),
+(002, 'Bacon Avocado Burger', 'Burgers'),
+(003, 'Spicy Jalapeno Burger', 'Burgers'),
+(004, 'Mushroom Swiss Burger', 'Burgers'),
+(005, 'BBQ Ranch Chicken Burger', 'Burgers'),
+(006, 'Veggie Burger Deluxe', 'Burgers'),
+(007, 'Double Bacon Cheeseburger', 'Burgers'),
+(008, 'Teriyaki Pineapple Burger', 'Burgers'),
+(009, 'Buffalo Blue Burger', 'Burgers'),
+(010, 'Turkey Burger Supreme', 'Burgers');
