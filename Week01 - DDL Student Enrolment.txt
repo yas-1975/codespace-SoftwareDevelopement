@@ -1,0 +1,47 @@
+-- Create the student table
+CREATE TABLE student (
+  studentID VARCHAR(20) NOT NULL,
+  fullname VARCHAR(50) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  PRIMARY KEY (studentID)
+);
+
+-- Populate the student table with some sample data
+INSERT INTO student (studentID, fullname, email) VALUES
+  ('EC123', 'Fred Flintstone', 'fflintstone@college.ac.uk'),
+  ('EC234', 'Barney Rubble', 'brubble@college.ac.uk'),
+  ('EC345', 'Wilma Flintstone', 'wflintstone@college.ac.uk'),
+  ('EC456', 'Betty Rubble', 'berubble@college.ac.uk');
+
+
+-- Create the module table
+CREATE TABLE module (
+  moduleID VARCHAR(20) NOT NULL, 
+  modulename VARCHAR(50) NOT NULL,
+  credit INT NOT NULL,
+  PRIMARY KEY (moduleID)
+);
+
+-- Populate the module table with some sample data
+INSERT INTO module (moduleID, modulename, credit) VALUES
+  ('EC101', 'Programming Fundamentals', 6),
+  ('EC201', 'Relational Databases', 6),
+  ('EC301', 'Data Structures and Algorithms', 6),
+  ('EC401', 'Artificial Intelligence', 6);
+
+-- Create the enrolment table
+CREATE TABLE enrolment (
+  ID INT NOT NULL,
+  studentID VARCHAR(20) NOT NULL,
+  moduleID VARCHAR(20) NOT NULL, 
+  PRIMARY KEY (id)
+);
+
+-- Populate the enrolment table with some sample data
+INSERT INTO enrolment (id, studentID, moduleID) VALUES
+  (1, 'EC123', 'EC101'),
+  (2, 'EC123', 'EC201'),
+  (3, 'EC234', 'EC101'),
+  (4, 'EC345', 'EC301'),
+  (5, 'EC456', 'EC401'),
+  (6, 'EC456', 'EC201');
