@@ -1,0 +1,103 @@
+
+-- Create table for orders
+
+CREATE TABLE `orders` (
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `item_id` int(10) UNSIGNED NOT NULL,
+  `total` decimal(8,2) NOT NULL,
+  `order_date` datetime NOT NULL,
+  `quantity` int(10) UNSIGNED NOT NULL,
+  `payment_id` int(10) UNSIGNED NOT NULL
+);
+
+-- Create Table `payment`
+
+
+CREATE TABLE `payment` (
+  `payment_id` int(10) UNSIGNED NOT NULL,
+  `payment_amount` decimal(6,2) NOT NULL,
+  `account_no` int(10) NOT NULL,
+  `bsb_no` int(10) NOT NULL,
+  `user_id` int(10) NOT NULL
+);
+
+
+
+-- create table for items
+CREATE TABLE `items` (
+  `item_id` int(10) UNSIGNED NOT NULL,
+  `item_name` varchar(20) NOT NULL,
+  `item_desc` varchar(200) NOT NULL,
+  `item_img` varchar(20) NOT NULL,
+  `item_price` decimal(4,2) NOT NULL
+   PRIMARY KEY (item_id)
+
+);
+
+--
+-- Create table for `users`
+--
+
+CREATE TABLE `users` (
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `firstname` varchar(20) NOT NULL,
+  `lastname` varchar(40) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `reg_date` datetime NOT NULL,
+  `payment_id` int(10) NOT NULL
+);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`user_id`,`item_id`),
+  ADD KEY `item_id` (`item_id`),
+  ADD KEY `payment_id` (`payment_id`);
+
+--
+-- Indexes for table `payment`
+--
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`payment_id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `items`
+--
+ALTER TABLE `items`
+  MODIFY `item_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `payment`
+--
+ALTER TABLE `payment`
+  MODIFY `payment_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1100;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`item_id`) REFERENCES `items` (`item_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `orders_ibfk_3` FOREIGN KEY (`payment_id`) REFERENCES `payment` (`payment_id`) ON DELETE CASCADE ON UPDATE CASCADE;
