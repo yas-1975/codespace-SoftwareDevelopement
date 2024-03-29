@@ -1,0 +1,37 @@
+Activity - Research
+
+In this activity you are required to research about the topics:
+
+1. What is Software Testing?
+
+This is a method to which to asses the funcitonality of a software programs.  The process will check whether the software
+matches the requirements and to ensure that the software is bug-free.  It's purpose is to identify any errors, faults or 
+any missing requirements.
+
+2. Types Of Software Testing:
+
+* Functional Testing:
+
+What is Functional Testing?
+
+This is a thype of software testing which validate the software system against its function requirements and the specifications.  This ensures
+that it functions as it is expected to and meets the funcitonality.
+
+Give 3 examples.
+
+1. Unit Testing - This Focuses on individual units or components.
+2. Smoke Testing -  A preliminary test to ensure that critical functionalities work after software has been built
+3. User Acceptance Testing (UAT) This Validates whether the software meets user expectations.
+
+Non-Functional Testing:
+
+What is Non-Functional Testing?
+
+This type of testing is to verifty non functional aspects of the products, e.g. the performance, stabiltiy and usability of the software.  
+This is to test how well the product performs.
+ 
+Give 3 examples.
+
+1. Performance Test
+2. Stress Test
+3.  Security Tests
