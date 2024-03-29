@@ -1,0 +1,100 @@
+<!-- index.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rock Paper Scissors Game</title>
+
+        <style>
+            .options {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+	</head>
+
+    <body>
+        <!-- Buttons -->
+        <div class="options">
+            <button data-cy="rock" id="rock">Rock</button>
+            <button data-cy="paper" id="paper">Paper</button>
+            <button data-cy="scissors" id="scissors">Scissors</button>
+        </div>
+
+        <!-- Info -->
+        <h2>Your Option: <span id="user-option"></span></h2>
+        <h2>Computer Option: <span id="computer-option"></span></h2>
+        <h2>Result: <span id="result"></span></h2>
+
+        <script>
+            // Get the buttons
+            const rockBtn = document.getElementById("rock");
+            const paperBtn = document.getElementById("paper");
+            const scissorskBtn = document.getElementById("scissors");
+
+            // Get the spans
+
+            const userOptionSpan = document.getElementById("user-option");
+            const ComputerOptionSpan = document.getElementById("computer-option");
+            const resultSpan = document.getElementById("result");
+            
+            // Defines the options
+            const options = ["Rock", "Paper", "Scissors"];
+
+            // Add click events to the buttons
+            rockBtn.addEventListener("click", function() {
+                playGame(options[0]);
+            });
+
+            paperBtn.addEventListener("click", function() {
+                playGame(options[1]);
+            });
+
+            scissorskBtn.addEventListener("click", function() {
+                playGame(options[2]);
+            });
+
+            // Play the game function
+            function playGame(userOption) {
+                //Get teh computer option
+                const computerOpiton = options[Math.floor(Math.random() * options.length)];
+                // Set the uers option
+                userOptionSpan.innerHTML = userOption;
+
+                //Set the compter option
+
+                ComputerOptionSpan.innerHTML = computerOpiton;
+            
+
+                //Compare the option
+                // A Draw
+                if (userOption === computerOpiton) {
+                    resultSpan.innerHTML ="It's a tie!";
+                }
+
+                // The player wins
+                // Rock Vs Scissor
+                else if (userOption === "Rock" && computerOpiton === "Scissors") {
+                    resultSpan.innerHTML = "You Win!";
+
+                }
+                //Paper vs Rock
+                else if (userOption === "Paper" && computerOpiton === "Rock") {
+                    resultSpan.innerHTML = "You Win!";
+                }
+                //Scissors vs Paper
+                else if (userOption === "Scissors" && computerOpiton === "Paper") {
+                    resultSpan.innerHTML = "You Win!";
+                }
+
+                //Otherwise  Lose
+                else {
+                    resultSpan.innerHTML = "You Lose!"
+                }
+
+            }
+            </script>
+    </body>
+</html>
