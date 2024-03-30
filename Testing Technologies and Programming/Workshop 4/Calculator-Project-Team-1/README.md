@@ -15,7 +15,7 @@ For start, please add your name to this list:
 <br/><br/>
 Jorge,
 
-NOTE:
+YH NOTES:
 <br>
 As part of the task I completed the following items as part of the build:
 <br>
@@ -23,4 +23,4 @@ As part of the task I completed the following items as part of the build:
 <br>
 3. the css file
 <br>
-4. Functions: Clear & CE
+3. Following Functions: Clear & CE
