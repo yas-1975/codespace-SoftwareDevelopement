@@ -16,9 +16,9 @@ For start, please add your name to this list:
 Jorge,
 
 YH NOTES:
-<br>
+<br/>
 As part of the task I completed the following items as part of the build:
-<br>
+<br/>
 1. the Index.html file - Buttons and display
 <br/>
 2. the css file
