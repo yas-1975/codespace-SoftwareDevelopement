@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  /* Center the main container and set its width */
+  .container {
+    width: 300px;
+    margin: 50px auto;
+  }
+  /* Style the input field */
+  input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+  }
+  /* Style the add button */
+  button {
+    padding: 10px 15px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+  }
+  /* Style the list container */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  /* Style each list item */
+  li {
+    background: #eee;
+    padding: 5px;
+    margin-top: 5px;
+    position: relative;
+  }
+  /* Style the delete button for each list item */
+  .delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    color: red;
+  }
