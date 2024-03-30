@@ -20,7 +20,5 @@ YH NOTES:
 As part of the task I completed the following items as part of the build:
 <br/>
 1. the Index.html file - Buttons and display
-<br/>
 2. the css file
-<br/>
 3. Following Functions: Clear & CE
