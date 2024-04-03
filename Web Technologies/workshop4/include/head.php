@@ -17,6 +17,11 @@
 		border-color: blue;
 		border-style: outset;
         }
+		
+	
+	body{
+		background-color:#FBF4E7
+	}
 </style>		
 
 <body>
