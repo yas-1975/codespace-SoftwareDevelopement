@@ -1,7 +1,7 @@
 <?php 
 include ('include/head.php');
 
-echo '<br><div class="text-center"><img src="img/logo.jpg" alt="Logo Image"></div><br>';
+echo '<br><div class="text-center"><img src="img/logo2.jpg" alt="Logo Image"></div><br>';
 
 # Display any error messages if present.
 if (isset($errors) && !empty($errors)) {

@@ -4,7 +4,7 @@
 include ( 'include/heading1.html' ) ;
 
 
-echo '<br><div class="text-center"><img src="img/logo.jpg" alt="Logo Image"></div><br>';
+echo '<br><div class="text-center"><img src="img/logo2.jpg" alt="Logo Image"></div><br>';
 
 
 if ( $_SERVER[ 'REQUEST_METHOD' ] == 'POST' )
